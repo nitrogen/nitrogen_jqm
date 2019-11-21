@@ -1,0 +1,11 @@
+{application, nitrogen_jqm,
+ [
+  {description, "Jquery Mobile plugin for the Nitrogen Web Framework"},
+  {vsn, ""},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
