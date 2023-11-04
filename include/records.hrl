@@ -68,3 +68,10 @@
         display_mode=reveal     :: reveal | overlay | push,
         body=[]                 :: body()
     }).
+
+%% In Nitrogen 3, the mobile_target and mobile_dialog functionality was removed from #link,
+%% so this adds those attributes to a new element called #mobile_link
+?WF_EXTEND(link, mobile_link, element_mobile_link, [
+    {mobile_target, false, "boolean()"},
+    {mobile_dialog, false, "boolean()"}
+]).
